@@ -7,7 +7,7 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <!-- FontAwesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -21,7 +21,7 @@
                         cypress: '#667436',
                         chrysanthemum: '#D9828D',
                         wildberry: '#621E3E',
-                        ocean: '#38bdf8',
+                        ocean: '#0284c7',
                         deepblue: '#0a1128',
                     },
                     fontFamily: {
@@ -32,83 +32,41 @@
             }
         }
     </script>
-    <style>
-        @keyframes floatSlow {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-12px) rotate(2deg); }
-        }
-        @keyframes floatReverse {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(12px) rotate(-2deg); }
-        }
-        @keyframes bubbleRise {
-            0% { transform: translateY(0px) scale(0.8); opacity: 0.3; }
-            50% { opacity: 0.7; }
-            100% { transform: translateY(-100vh) scale(1.1); opacity: 0; }
-        }
-        .animate-float { animation: floatSlow 8s ease-in-out infinite; will-change: transform; }
-        .animate-float-delayed { animation: floatReverse 10s ease-in-out infinite; will-change: transform; }
-        .bubble {
-            position: absolute;
-            background: rgba(56, 189, 248, 0.1);
-            border: 1px solid rgba(56, 189, 248, 0.2);
-            border-radius: 50%;
-            animation: bubbleRise 14s linear infinite;
-            will-change: transform, opacity;
-        }
-    </style>
 </head>
-<body class="bg-gradient-to-b from-[#0a1128] via-[#0f1f38] to-[#142850] text-gray-100 font-sans antialiased selection:bg-chrysanthemum selection:text-white relative overflow-x-hidden">
-
-    <!-- Burbujas y Elementos Marinos Optimizados de Fondo -->
-    <div class="absolute inset-0 pointer-events-none overflow-hidden z-0 opacity-70">
-        <div class="bubble w-5 h-5 left-[10%] bottom-[-10%]" style="animation-duration: 12s;"></div>
-        <div class="bubble w-8 h-8 left-[30%] bottom-[-10%]" style="animation-duration: 16s;"></div>
-        <div class="bubble w-4 h-4 left-[65%] bottom-[-10%]" style="animation-duration: 10s;"></div>
-        <div class="bubble w-6 h-6 left-[85%] bottom-[-10%]" style="animation-duration: 14s;"></div>
-
-        <!-- Todas las imágenes de la clienta distribuidas de fondo -->
-        <img src="medusa.jpg" class="absolute top-20 left-[3%] w-20 md:w-24 opacity-30 rounded-2xl animate-float shadow-lg object-cover" alt="Medusa">
-        <img src="estrellas.jpg" class="absolute top-32 right-[4%] w-18 md:w-20 opacity-30 rounded-2xl animate-float-delayed shadow-lg object-cover" alt="Estrellas">
-        <img src="cangrejo.jpg" class="absolute top-[42%] left-[2%] w-16 md:w-20 opacity-30 rounded-2xl animate-float shadow-lg object-cover" alt="Cangrejo">
-        <img src="conchas.jpg" class="absolute top-[52%] right-[3%] w-20 md:w-24 opacity-30 rounded-2xl animate-float-delayed shadow-lg object-cover" alt="Conchas">
-        <img src="pulpo.jpg" class="absolute top-[65%] left-[4%] w-18 md:w-20 opacity-30 rounded-2xl animate-float shadow-lg object-cover" alt="Pulpo">
-        <img src="langosta.jpg" class="absolute top-[75%] right-[5%] w-20 md:w-24 opacity-30 rounded-2xl animate-float-delayed shadow-lg object-cover" alt="Langosta">
-        <img src="tiburon.jpg" class="absolute top-[88%] left-[3%] w-22 md:w-26 opacity-30 rounded-2xl animate-float shadow-lg object-cover" alt="Tiburón">
-        <img src="tiburones-ballena.jpg" class="absolute top-[92%] right-[4%] w-24 md:w-28 opacity-30 rounded-2xl animate-float-delayed shadow-lg object-cover" alt="Tiburón Ballena">
-    </div>
+<body class="bg-gradient-to-b from-white via-sky-50 via-sky-200 to-[#0a1128] text-gray-900 font-sans antialiased selection:bg-chrysanthemum selection:text-white relative overflow-x-hidden">
 
     <!-- Header / Barra de Navegación -->
-    <header class="sticky top-0 z-40 bg-[#0a1128]/90 backdrop-blur-md border-b border-sky-900/40 shadow-md">
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-sky-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
                 <div class="w-10 h-10 rounded-full bg-wildberry flex items-center justify-center text-white font-serif font-bold text-xl shadow-md">
                     K
                 </div>
                 <div>
-                    <span class="font-serif text-2xl font-bold tracking-tight text-white">Kai Crochet</span>
-                    <p class="text-xs text-ocean font-medium uppercase tracking-widest">Hecho a mano</p>
+                    <span class="font-serif text-2xl font-bold italic tracking-tight text-wildberry">Kai Crochet</span>
+                    <p class="text-xs text-ocean font-bold italic uppercase tracking-widest">Hecho a mano</p>
                 </div>
             </div>
 
             <div class="flex items-center space-x-6">
-                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
-                    <a href="#catalogo" class="hover:text-ocean transition">Catálogo</a>
-                    <a href="#sobre-nosotros" class="hover:text-ocean transition">Acerca de</a>
-                    <a href="#contacto" class="hover:text-ocean transition">Contacto</a>
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-bold italic text-gray-700">
+                    <a href="#catalogo" class="hover:text-wildberry transition">Catálogo</a>
+                    <a href="#inspiracion" class="hover:text-wildberry transition">Inspiración Marina</a>
+                    <a href="#sobre-nosotros" class="hover:text-wildberry transition">Acerca de</a>
+                    <a href="#contacto" class="hover:text-wildberry transition">Contacto</a>
                 </nav>
 
                 <div class="flex items-center space-x-4">
-                    <a href="https://www.instagram.com/kai._crochet?stkn=MWtwcWhjaTE3OGRvZA==" target="_blank" class="text-gray-300 hover:text-chrysanthemum transition text-lg">
+                    <a href="https://www.instagram.com/kai._crochet?stkn=MWtwcWhjaTE3OGRvZA==" target="_blank" class="text-gray-600 hover:text-chrysanthemum transition text-lg">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="https://www.tiktok.com/@kai._crochet?_r=1&_t=ZS-99ljewnY8BA" target="_blank" class="text-gray-300 hover:text-ocean transition text-lg">
+                    <a href="https://www.tiktok.com/@kai._crochet?_r=1&_t=ZS-99ljewnY8BA" target="_blank" class="text-gray-600 hover:text-ocean transition text-lg">
                         <i class="fa-brands fa-tiktok"></i>
                     </a>
-                    <button onclick="toggleCart()" class="relative bg-ylang/20 hover:bg-ylang text-ylang hover:text-deepblue px-4 py-2.5 rounded-full font-medium text-sm transition flex items-center border border-ylang/40 shadow-sm">
+                    <button onclick="toggleCart()" class="relative bg-ylang hover:bg-ylang/80 text-wildberry px-4 py-2.5 rounded-full font-bold italic text-sm transition flex items-center shadow-sm border border-ylang/50">
                         <i class="fa-solid fa-bag-shopping mr-2"></i>
                         <span>Carrito</span>
-                        <span id="cart-counter" class="absolute -top-1 -right-1 bg-chrysanthemum text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">0</span>
+                        <span id="cart-counter" class="absolute -top-1 -right-1 bg-wildberry text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">0</span>
                     </button>
                 </div>
             </div>
@@ -120,32 +78,32 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6 text-center lg:text-left">
-                    <span class="inline-block bg-sky-950/80 text-ocean px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-sky-800/50">
-                        Colección Marina Artesanal
+                    <span class="inline-block bg-sky-100 text-ocean px-4 py-1.5 rounded-full text-xs font-bold italic uppercase tracking-wider border border-sky-200">
+                        ✨ Colección Marina Artesanal
                     </span>
-                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                        Piezas únicas tejidas con <span class="italic text-chrysanthemum">amor y detalle</span>
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold italic text-wildberry leading-tight">
+                        Piezas únicas tejidas con <span class="text-chrysanthemum underline">amor y detalle</span>
                     </h1>
-                    <p class="text-gray-300 text-lg max-w-xl mx-auto lg:mx-0">
-                        Descubre nuestra colección exclusiva de ropa, accesorios y tiernos peluches hechos a mano inspirados en el océano. Diseños exclusivos pensados para ti.
+                    <p class="text-gray-700 font-bold italic text-lg max-w-xl mx-auto lg:mx-0">
+                        Descubre nuestra colección exclusiva de ropa, accesorios y tiernos peluches hechos a mano inspirados en la frescura del océano.
                     </p>
                     <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
-                        <a href="#catalogo" class="bg-chrysanthemum hover:bg-chrysanthemum/90 text-white font-medium px-8 py-3.5 rounded-full shadow-lg transition text-center">
+                        <a href="#catalogo" class="bg-wildberry hover:bg-wildberry/90 text-white font-bold italic px-8 py-3.5 rounded-full shadow-lg transition text-center">
                             Ver Catálogo
                         </a>
-                        <a href="https://wa.me/56994919555?text=¡Hola!%20Me%20interesa%20consultar%20sobre%20un%20diseño%20personalizado%20de%20Kai%20Crochet." target="_blank" class="bg-transparent border-2 border-ocean text-ocean hover:bg-ocean hover:text-deepblue font-medium px-8 py-3.5 rounded-full transition text-center">
+                        <a href="https://wa.me/56994919555?text=¡Hola!%20Me%20interesa%20consultar%20sobre%20un%20diseño%20personalizado%20de%20Kai%20Crochet." target="_blank" class="bg-white/90 border-2 border-cypress text-cypress hover:bg-cypress hover:text-white font-bold italic px-8 py-3.5 rounded-full transition text-center shadow-sm">
                             <i class="fa-brands fa-whatsapp mr-2"></i> Consultar por WhatsApp
                         </a>
                     </div>
                 </div>
                 <div class="relative flex justify-center">
-                    <div class="w-full max-w-md bg-gradient-to-tr from-sky-900/40 via-purple-950/30 to-blue-950/40 backdrop-blur-md rounded-3xl p-6 shadow-2xl border border-sky-800/30">
-                        <div class="bg-[#0f1f38]/90 rounded-2xl p-6 shadow-inner text-center space-y-4 border border-sky-900/40">
-                            <div class="w-20 h-20 mx-auto bg-sky-950 rounded-full flex items-center justify-center text-ocean text-3xl border border-sky-800/50">
+                    <div class="w-full max-w-md bg-gradient-to-tr from-white via-sky-100 to-chrysanthemum/20 rounded-3xl p-6 shadow-2xl border border-white/80">
+                        <div class="bg-white/95 rounded-2xl p-6 shadow-inner text-center space-y-4">
+                            <div class="w-20 h-20 mx-auto bg-sky-50 rounded-full flex items-center justify-center text-ocean text-3xl shadow-sm">
                                 <i class="fa-solid fa-water"></i>
                             </div>
-                            <h3 class="font-serif text-xl font-bold text-white">Calidad Garantizada</h3>
-                            <p class="text-sm text-gray-300">
+                            <h3 class="font-serif text-xl font-bold italic text-wildberry">Calidad Garantizada</h3>
+                            <p class="text-sm font-bold italic text-gray-600">
                                 Trabajamos con hilos de algodón hipoalergénico y lanas de primera calidad para asegurar suavidad y durabilidad en cada prenda y peluche.
                             </p>
                         </div>
@@ -155,13 +113,63 @@
         </div>
     </section>
 
+    <!-- Sección de Inspiración Marina (Dibujos Integrados y Grandes) -->
+    <section id="inspiracion" class="py-16 bg-sky-100/50 backdrop-blur-sm relative z-10 border-y border-sky-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+            <div>
+                <span class="text-xs font-bold italic uppercase tracking-widest text-ocean">Nuestra Esencia</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold italic text-wildberry mt-2">Magia inspirada en el océano</h2>
+                <p class="text-gray-700 font-bold italic max-w-2xl mx-auto mt-2">Cada pieza de nuestro emprendimiento nace con la frescura, los colores y la ternura de los tesoros marinos.</p>
+            </div>
+
+            <!-- Galería grande e integrada de dibujos -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-4">
+                <div class="bg-white/80 backdrop-blur rounded-3xl p-4 shadow-md border border-white flex flex-col items-center">
+                    <img src="medusa.jpg" class="w-full h-44 object-cover rounded-2xl shadow-inner mb-3" alt="Medusa">
+                    <span class="font-serif font-bold italic text-wildberry text-sm">Medusas de ternura</span>
+                </div>
+                <div class="bg-white/80 backdrop-blur rounded-3xl p-4 shadow-md border border-white flex flex-col items-center">
+                    <img src="estrellas.jpg" class="w-full h-44 object-cover rounded-2xl shadow-inner mb-3" alt="Estrellas">
+                    <span class="font-serif font-bold italic text-wildberry text-sm">Destellos marinos</span>
+                </div>
+                <div class="bg-white/80 backdrop-blur rounded-3xl p-4 shadow-md border border-white flex flex-col items-center">
+                    <img src="conchas.jpg" class="w-full h-44 object-cover rounded-2xl shadow-inner mb-3" alt="Conchas">
+                    <span class="font-serif font-bold italic text-wildberry text-sm">Conchas y caracoles</span>
+                </div>
+                <div class="bg-white/80 backdrop-blur rounded-3xl p-4 shadow-md border border-white flex flex-col items-center">
+                    <img src="pulpo.jpg" class="w-full h-44 object-cover rounded-2xl shadow-inner mb-3" alt="Pulpo">
+                    <span class="font-serif font-bold italic text-wildberry text-sm">Amigos del mar</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white/80 backdrop-blur rounded-3xl p-4 shadow-md border border-white flex flex-col items-center">
+                    <img src="cangrejo.jpg" class="w-full h-44 object-cover rounded-2xl shadow-inner mb-3" alt="Cangrejo">
+                    <span class="font-serif font-bold italic text-wildberry text-sm">Cangrejito alegre</span>
+                </div>
+                <div class="bg-white/80 backdrop-blur rounded-3xl p-4 shadow-md border border-white flex flex-col items-center">
+                    <img src="langosta.jpg" class="w-full h-44 object-cover rounded-2xl shadow-inner mb-3" alt="Langosta">
+                    <span class="font-serif font-bold italic text-wildberry text-sm">Detalles únicos</span>
+                </div>
+                <div class="bg-white/80 backdrop-blur rounded-3xl p-4 shadow-md border border-white flex flex-col items-center">
+                    <img src="tiburon.jpg" class="w-full h-44 object-cover rounded-2xl shadow-inner mb-3" alt="Tiburón">
+                    <span class="font-serif font-bold italic text-wildberry text-sm">Aventuras oceánicas</span>
+                </div>
+                <div class="bg-white/80 backdrop-blur rounded-3xl p-4 shadow-md border border-white flex flex-col items-center">
+                    <img src="tiburones-ballena.jpg" class="w-full h-44 object-cover rounded-2xl shadow-inner mb-3" alt="Tiburones ballena">
+                    <span class="font-serif font-bold italic text-wildberry text-sm">Majestuosidad marina</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Catálogo de Productos -->
-    <section id="catalogo" class="py-20 bg-[#0c162c]/60 backdrop-blur-sm relative z-10 border-y border-sky-900/30">
+    <section id="catalogo" class="py-20 bg-sky-200/40 relative z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest text-ocean">Nuestras Creaciones</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2">Catálogo Destacado</h2>
-                <p class="text-gray-300 mt-3">Elige tus piezas favoritas, añade detalles personalizados y agrégalas al carrito para cotizar directamente.</p>
+                <span class="text-xs font-bold italic uppercase tracking-widest text-ocean">Nuestras Creaciones</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold italic text-wildberry mt-2">Catálogo Destacado</h2>
+                <p class="text-gray-700 font-bold italic mt-3">Elige tus piezas favoritas, añade detalles personalizados y agrégalas al carrito para cotizar directamente.</p>
             </div>
 
             <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -171,22 +179,22 @@
     </section>
 
     <!-- Sección Sobre Nosotros -->
-    <section id="sobre-nosotros" class="py-20 bg-[#0a1128]/80 relative z-10">
+    <section id="sobre-nosotros" class="py-20 bg-sky-300/30 border-y border-sky-200/60 relative z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6">
-                    <span class="text-xs font-bold uppercase tracking-widest text-ocean">Tradición y Estilo</span>
-                    <h2 class="font-serif text-3xl font-bold text-white">Detrás de cada punto hay una historia</h2>
-                    <p class="text-gray-300 leading-relaxed">
+                    <span class="text-xs font-bold italic uppercase tracking-widest text-ocean">Tradición y Estilo</span>
+                    <h2 class="font-serif text-3xl font-bold italic text-wildberry">Detrás de cada punto hay una historia</h2>
+                    <p class="text-gray-800 font-bold italic leading-relaxed">
                         En <strong>Kai Crochet</strong> convertimos hilos y texturas en piezas con temática marina. Cada prenda y peluche amigurumi es elaborado de forma artesanal, cuidando cada detalle para ofrecerte un producto sofisticado y duradero.
                     </p>
                 </div>
-                <div class="bg-sky-950/40 border border-sky-900/50 rounded-3xl p-8 lg:p-12 text-center relative shadow-sm backdrop-blur-sm">
+                <div class="bg-white/80 border border-white rounded-3xl p-8 lg:p-12 text-center relative shadow-md backdrop-blur-sm">
                     <i class="fa-solid fa-quote-left text-4xl text-ocean mb-4"></i>
-                    <p class="font-serif italic text-xl text-gray-200 mb-6">
+                    <p class="font-serif italic text-xl font-bold text-wildberry mb-6">
                         "El arte del crochet permite tejer emociones inspiradas en la magia del mar."
                     </p>
-                    <span class="font-bold text-sm tracking-wider uppercase text-ocean">Kai Crochet Team</span>
+                    <span class="font-bold italic text-sm tracking-wider uppercase text-ocean">Kai Crochet Team</span>
                 </div>
             </div>
         </div>
@@ -194,25 +202,25 @@
 
     <!-- Carrito de Compras -->
     <div id="cart-modal" class="fixed inset-0 z-50 overflow-hidden hidden">
-        <div class="absolute inset-0 bg-black/70 backdrop-blur-sm transition-opacity" onclick="toggleCart()"></div>
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity" onclick="toggleCart()"></div>
         <div class="absolute inset-y-0 right-0 max-w-full flex pl-10">
-            <div class="w-screen max-w-md bg-[#0f1f38] text-gray-100 shadow-2xl flex flex-col border-l border-sky-900/50">
-                <div class="p-6 bg-[#0a1128] text-white flex items-center justify-between border-b border-sky-900/40">
+            <div class="w-screen max-w-md bg-white text-gray-900 shadow-2xl flex flex-col border-l border-gray-200">
+                <div class="p-6 bg-wildberry text-white flex items-center justify-between">
                     <div class="flex items-center space-x-2">
-                        <i class="fa-solid fa-bag-shopping text-ocean"></i>
-                        <h3 class="font-serif text-lg font-bold">Tu Carrito de Pedido</h3>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <h3 class="font-serif text-lg font-bold italic">Tu Carrito de Pedido</h3>
                     </div>
-                    <button onclick="toggleCart()" class="text-gray-400 hover:text-white text-xl">
+                    <button onclick="toggleCart()" class="text-white/80 hover:text-white text-xl">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-                <div id="cart-items" class="flex-1 overflow-y-auto p-6 space-y-4 divide-y divide-sky-900/30"></div>
-                <div class="p-6 bg-[#0a1128] border-t border-sky-900/40 space-y-4">
-                    <div class="flex justify-between items-center text-lg font-bold text-white">
+                <div id="cart-items" class="flex-1 overflow-y-auto p-6 space-y-4 divide-y divide-gray-100"></div>
+                <div class="p-6 bg-gray-50 border-t border-gray-200 space-y-4">
+                    <div class="flex justify-between items-center text-lg font-bold italic text-gray-900">
                         <span>Total estimado:</span>
-                        <span id="cart-total" class="text-ylang">$0.00</span>
+                        <span id="cart-total" class="text-wildberry">$0.00</span>
                     </div>
-                    <button onclick="checkoutWhatsApp()" class="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-medium py-3.5 px-6 rounded-full shadow-lg transition flex items-center justify-center space-x-2">
+                    <button onclick="checkoutWhatsApp()" class="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold italic py-3.5 px-6 rounded-full shadow-lg transition flex items-center justify-center space-x-2">
                         <i class="fa-brands fa-whatsapp text-xl"></i>
                         <span>Enviar pedido por WhatsApp</span>
                     </button>
@@ -222,35 +230,35 @@
     </div>
 
     <!-- Footer -->
-    <footer id="contacto" class="bg-[#070b19] text-white py-16 relative z-10 border-t border-sky-900/30">
+    <footer id="contacto" class="bg-[#0a1128] text-white py-16 relative z-10 border-t border-sky-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
                 <div class="space-y-4">
-                    <h3 class="font-serif text-2xl font-bold">Kai Crochet</h3>
-                    <p class="text-gray-400 text-sm max-w-xs mx-auto md:mx-0">
+                    <h3 class="font-serif text-2xl font-bold italic">Kai Crochet</h3>
+                    <p class="text-gray-300 font-bold italic text-sm max-w-xs mx-auto md:mx-0">
                         Creando piezas únicas de ropa y peluches tejidos a mano con temática marina.
                     </p>
                 </div>
                 <div class="space-y-4">
-                    <h4 class="font-bold text-ylang uppercase text-xs tracking-wider">Redes Sociales</h4>
+                    <h4 class="font-bold italic text-ylang uppercase text-xs tracking-wider">Redes Sociales</h4>
                     <div class="flex justify-center md:justify-start space-x-4">
-                        <a href="https://www.instagram.com/kai._crochet?stkn=MWtwcWhjaTE3OGRvZA==" target="_blank" class="w-10 h-10 rounded-full bg-sky-950/60 hover:bg-chrysanthemum flex items-center justify-center transition border border-sky-900/40">
+                        <a href="https://www.instagram.com/kai._crochet?stkn=MWtwcWhjaTE3OGRvZA==" target="_blank" class="w-10 h-10 rounded-full bg-white/10 hover:bg-chrysanthemum flex items-center justify-center transition">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
-                        <a href="https://www.tiktok.com/@kai._crochet?_r=1&_t=ZS-99ljewnY8BA" target="_blank" class="w-10 h-10 rounded-full bg-sky-950/60 hover:bg-ocean hover:text-deepblue flex items-center justify-center transition border border-sky-900/40">
+                        <a href="https://www.tiktok.com/@kai._crochet?_r=1&_t=ZS-99ljewnY8BA" target="_blank" class="w-10 h-10 rounded-full bg-white/10 hover:bg-ocean flex items-center justify-center transition">
                             <i class="fa-brands fa-tiktok"></i>
                         </a>
-                        <a href="https://wa.me/56994919555" target="_blank" class="w-10 h-10 rounded-full bg-sky-950/60 hover:bg-[#25D366] flex items-center justify-center transition border border-sky-900/40">
+                        <a href="https://wa.me/56994919555" target="_blank" class="w-10 h-10 rounded-full bg-white/10 hover:bg-[#25D366] flex items-center justify-center transition">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
                     </div>
                 </div>
                 <div class="space-y-4">
-                    <h4 class="font-bold text-ylang uppercase text-xs tracking-wider">Contacto Directo</h4>
-                    <p class="text-gray-300 text-sm"><i class="fa-solid fa-phone mr-2 text-ocean"></i> +569 9491 9555</p>
+                    <h4 class="font-bold italic text-ylang uppercase text-xs tracking-wider">Contacto Directo</h4>
+                    <p class="text-gray-300 font-bold italic text-sm"><i class="fa-solid fa-phone mr-2 text-ocean"></i> +569 9491 9555</p>
                 </div>
             </div>
-            <div class="mt-12 pt-8 border-t border-sky-900/30 text-center text-xs text-gray-500">
+            <div class="mt-12 pt-8 border-t border-white/10 text-center text-xs text-gray-400 font-bold italic">
                 &copy; 2026 Kai Crochet. Todos los derechos reservados.
             </div>
         </div>
@@ -320,22 +328,22 @@
         function renderProducts() {
             const grid = document.getElementById('product-grid');
             grid.innerHTML = products.map(p => `
-                <div class="bg-[#0f1f38] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-sky-900/50 flex flex-col justify-between group">
-                    <div class="relative overflow-hidden bg-sky-950 h-64">
-                        <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90">
-                        <span class="absolute top-4 left-4 bg-ylang text-deepblue text-xs font-bold px-3 py-1 rounded-full shadow">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-sky-100 flex flex-col justify-between group">
+                    <div class="relative overflow-hidden bg-sky-50 h-64">
+                        <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-ylang text-wildberry text-xs font-bold italic px-3 py-1 rounded-full shadow">
                             ${p.badge}
                         </span>
                     </div>
                     <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
                         <div>
-                            <span class="text-xs font-semibold text-ocean uppercase tracking-wider">${p.category}</span>
-                            <h3 class="font-serif text-xl font-bold text-white mt-1">${p.name}</h3>
-                            <p class="text-gray-300 text-sm mt-2 leading-relaxed">${p.description}</p>
+                            <span class="text-xs font-bold italic text-ocean uppercase tracking-wider">${p.category}</span>
+                            <h3 class="font-serif text-xl font-bold italic text-wildberry mt-1">${p.name}</h3>
+                            <p class="text-gray-700 font-bold italic text-sm mt-2 leading-relaxed">${p.description}</p>
                         </div>
-                        <div class="pt-4 flex items-center justify-between border-t border-sky-900/40">
-                            <span class="font-serif text-2xl font-bold text-ylang">$${p.price.toFixed(2)}</span>
-                            <button onclick="addToCart(${p.id})" class="bg-chrysanthemum hover:bg-chrysanthemum/80 text-white px-5 py-2.5 rounded-full text-sm font-medium transition shadow-sm flex items-center space-x-2">
+                        <div class="pt-4 flex items-center justify-between border-t border-gray-100">
+                            <span class="font-serif text-2xl font-bold italic text-wildberry">$${p.price.toFixed(2)}</span>
+                            <button onclick="addToCart(${p.id})" class="bg-chrysanthemum hover:bg-wildberry text-white px-5 py-2.5 rounded-full text-sm font-bold italic transition shadow-sm flex items-center space-x-2">
                                 <i class="fa-solid fa-plus"></i>
                                 <span>Agregar</span>
                             </button>
@@ -388,9 +396,9 @@
 
             if (cart.length === 0) {
                 itemsContainer.innerHTML = `
-                    <div class="text-center py-12 text-gray-500 space-y-3">
+                    <div class="text-center py-12 text-gray-400 space-y-3">
                         <i class="fa-solid fa-basket-shopping text-4xl"></i>
-                        <p class="text-sm">Tu carrito está vacío</p>
+                        <p class="text-sm font-bold italic">Tu carrito está vacío</p>
                     </div>
                 `;
                 totalElement.textContent = '$0.00';
@@ -404,14 +412,14 @@
                 return `
                     <div class="flex items-center justify-between py-4">
                         <div class="space-y-1">
-                            <h4 class="font-serif font-bold text-white text-sm">${item.name}</h4>
-                            <p class="text-xs text-gray-400">$${item.price.toFixed(2)} c/u</p>
+                            <h4 class="font-serif font-bold italic text-wildberry text-sm">${item.name}</h4>
+                            <p class="text-xs font-bold italic text-gray-500">$${item.price.toFixed(2)} c/u</p>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <div class="flex items-center border border-sky-900 rounded-full overflow-hidden bg-sky-950">
-                                <button onclick="updateQuantity(${item.id}, -1)" class="px-2.5 py-1 text-gray-300 hover:bg-sky-900">-</button>
-                                <span class="px-2 text-sm font-bold text-white">${item.quantity}</span>
-                                <button onclick="updateQuantity(${item.id}, 1)" class="px-2.5 py-1 text-gray-300 hover:bg-sky-900">+</button>
+                            <div class="flex items-center border border-gray-200 rounded-full overflow-hidden">
+                                <button onclick="updateQuantity(${item.id}, -1)" class="px-2.5 py-1 text-gray-500 hover:bg-gray-100">-</button>
+                                <span class="px-2 text-sm font-bold italic">${item.quantity}</span>
+                                <button onclick="updateQuantity(${item.id}, 1)" class="px-2.5 py-1 text-gray-500 hover:bg-gray-100">+</button>
                             </div>
                             <button onclick="removeFromCart(${item.id})" class="text-gray-400 hover:text-chrysanthemum">
                                 <i class="fa-solid fa-trash-can text-sm"></i>
